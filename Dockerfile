@@ -10,4 +10,4 @@ RUN pip install poetry
 RUN poetry config virtualenvs.create false
 RUN poetry install
 
-CMD streamlit run main.py --server.headless=true --server.port=8000
+CMD ls
