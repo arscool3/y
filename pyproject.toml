@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "y"
+version = "0.1.0"
+description = ""
+authors = ["Arslan Yersain <arslanersain@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.2"
+streamlit = "^1.31.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
