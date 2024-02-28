@@ -5,12 +5,9 @@ ENV PYTHONUNBUFFERED=1
 
 COPY . .
 
-WORKDIR /src
-
 RUN pip install poetry
 
 RUN poetry config virtualenvs.create false
 RUN poetry install
-
-RUN ls
-CMD streamlit run /main.py --server.headless=true --server.port=8000
+]
+CMD streamlit run main.py --server.headless=true --server.port=8000
